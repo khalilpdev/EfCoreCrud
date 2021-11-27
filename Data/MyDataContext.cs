@@ -18,7 +18,9 @@ namespace EfCoreCrud.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseInMemoryDatabase(databaseName: "todos");
+            //options.UseInMemoryDatabase(databaseName: "todos");
+            options.UseSqlite(connectionString: "DataSource=todos.db;Cache=Shared");
+            options.LogTo(Console.WriteLine);
         }
 
         public DbSet<Todo> Todos { get; set; }

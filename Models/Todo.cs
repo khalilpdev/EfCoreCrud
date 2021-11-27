@@ -12,5 +12,10 @@ namespace EfCoreCrud.Models
         public string Title { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public bool Done { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id: {Id} - Título: {Title} - Concluído: {Done}";
+        }
     }
 }
