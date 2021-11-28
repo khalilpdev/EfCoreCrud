@@ -49,8 +49,10 @@ void PrintData()
  * dotnet add package Microsoft.EntityFrameworkCore.InMemory
  * dotnet add package Microsoft.EntityFrameworkCore.Sqlite
  * dotnet add package Microsoft.EntityFrameworkCore.Design
+ * dotnet add package Microsoft.EntityFrameworkCore.SqlServer
  * 
  * ** Migrations **
  * dotnet ef migrations add InitialCreation
  * dotnet ef database update
+ * dotnet ef migrations script -o .script.sql
  */ 
